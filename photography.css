@@ -1,0 +1,401 @@
+header {
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: nowrap;
+    width: 90%;
+    /* height: 60px; */
+    background-color: black;
+    /* position: fixed; */
+    height: 110px;
+    padding-block-end: 40px;
+}
+
+.name {
+    width: 60%;
+    margin-left: 40px;
+}
+
+header a {
+    font-family: brandon-grotesque;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: 0em;
+    text-transform: uppercase;
+    line-height: 2.7em;
+    font-size: 20px;
+}
+
+.menu a {
+    font-family: brandon-grotesque;
+    font-weight: 100;
+    font-style: normal;
+    letter-spacing: 0em;
+    text-transform: none;
+    line-height: 2.7em;
+    font-size: 1.2rem;
+}
+
+.name a:last-of-type {
+    padding: 0;
+}
+
+.name a:first-of-type {
+    padding-right: 5px;
+}
+
+header .menu {
+    float: right;
+    text-align: right;
+}
+
+header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+header li {
+    float: left;
+}
+
+header a {
+    display: inline-block;
+    text-decoration: none;
+    color:#EEAD0E;
+    text-align: center;
+    padding: 14px 16px;
+}
+
+header a:hover {
+    color: antiquewhite;
+}
+
+.fabric {
+    display: inline-block;
+}
+
+.fabric-list {
+    display: none;
+    position: absolute;
+    background-color: black;
+    height: 50px;
+    width: 160px;
+    box-shadow: 0px 8px 16px 0px;
+    z-index: 1;
+}
+
+.fabric-list a {
+    padding: 0px 16px;
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+}
+
+.fabric:hover .fabric-list {
+    display: block;
+}
+
+.nadav-kender-album {
+    position: relative;
+    /* border: 1px solid white; */
+    width: 620px;
+    height: 320px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 90%;
+    margin: 50px auto;
+}
+
+.name-info {
+    width: 100%;
+    margin: 50px auto;
+    height: 100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.name-info h1 {
+    font-family: brandon-grotesque;
+    font-weight: 100;
+    font-style: normal;
+    letter-spacing: 0em;
+    text-transform: none;
+    line-height: 1.6em;
+    font-size: 50px;
+    color: #EEAD0E;
+    margin:0;
+}
+
+.name-info .photo-name {
+    width: 100%;
+    text-align: center;
+}
+
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.content a {
+
+    display: none;
+    /* top: 50%;
+    left: 50%;
+    margin: -50px 0 0 -100px; */
+
+    position: absolute;
+    color: white;
+    text-decoration: none;
+
+
+    font-family: brandon-grotesque;
+    font-weight: 100;
+    font-style: normal;
+    letter-spacing: 0em;
+    text-transform: none;
+    line-height: 1.6em;
+    font-size: 50px;
+}
+
+.nka:hover .content a {
+    display: block;
+    z-index: 2;
+}
+
+
+.nka .imgbx::before{
+    content: '';
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: gray ;
+    z-index: 1;
+    mix-blend-mode: multiply;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.nka:hover .imgbx::before{ 
+    opacity: 1;
+}
+
+.nka .imgbx img{
+    position: absolute;
+    top:0;
+    left: 0;
+}
+
+
+.nadav-kender-album:hover {
+    z-index: 1;
+    transform: scale(1.1);
+    /* box-shadow: 0 30px 40px rgba(0,0,0,0.5); */
+    transition: 0.5s;
+}
+
+
+footer {
+    background-color: black;
+    width: 100%;
+    height: 150px;
+    font-family: brandon-grotesque;
+    font-weight: 100;
+    font-style: normal;
+    letter-spacing: 0em;
+    text-transform: none;
+    line-height: 1.6em;
+    font-size: 1rem;
+
+    padding-left: 60px;
+    padding-block-start: 200px;
+    padding-bottom: 100px;
+    color: #EEAD0E;
+}
+
+footer p:first-of-type {
+    color: white;
+}
+
+footer img {
+    width: 20px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: cover;
+}
+
+body .all-img {
+    width: 90%;
+    margin: 50px auto;
+    height:2000px;
+    /* background-color: blueviolet; */
+    /* border : 1px solid white; */
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+
+    flex-direction: row;
+}
+
+.container div {
+    margin-left: 10px;
+}
+
+.column1 {
+    width: 24%;
+    height: 100%;
+    /* background-color: #EEAD0E; */
+    height: 2000px;
+}
+
+.column1 div {
+    margin-bottom: 10px;
+}
+
+.column2 div {
+    margin-bottom: 10px;
+}
+.column3 div {
+    margin-bottom: 10px;
+}
+.column4 div {
+    margin-bottom: 10px;
+}
+
+
+
+.column1 .img1 {
+    height: 440px;
+}
+
+.column1 .img2 {
+    height: 340px;
+}
+.column1 .img3 {
+    height: 360px;
+    background-color: red;
+}
+.column1 .img4 {
+    height: 400px;
+    background-color: red;
+}
+.column1 .img5 {
+    height: 420px;
+    background-color: red;
+}
+
+.column2 {
+    width: 24%;
+    /* background-color: aliceblue; */
+}
+.column2 .img1 {
+    height: 200px;
+    background-color: red;
+}
+
+.column2 .img2 {
+    height: 340px;
+    background-color: red;
+}
+.column2 .img3 {
+    height: 360px;
+    background-color: red;
+}
+.column2 .img4 {
+    height: 400px;
+    background-color: red;
+}
+.column2 .img5 {
+    height: 660px;
+    background-color: red;
+}
+
+.column3 {
+    width: 24%;
+    /* background-color: aqua; */
+}
+
+.column3 .img1 {
+    height: 440px;
+    background-color: red;
+}
+
+.column3 .img2 {
+    height: 340px;
+    background-color: red;
+}
+.column3 .img3 {
+    height: 200px;
+    background-color: red;
+}
+.column3 .img4 {
+    height: 400px;
+    background-color: red;
+}
+.column3 .img5 {
+    height: 380px;
+    background-color: red;
+}
+
+.column3 .img6 {
+    height: 190px;
+    background-color: red;
+}
+
+
+.column4 {
+    width: 24%;
+    /* background-color: darkblue; */
+}
+
+.column4 .img1 {
+    height: 480px;
+    background-color: red;
+}
+
+.column4 .img2 {
+    height: 500px;
+    background-color: red;
+}
+.column4 .img3 {
+    height: 200px;
+    background-color: red;
+}
+.column4 .img4 {
+    height: 400px;
+    background-color: red;
+}
+.column4 .img5 {
+    height: 150px;
+    background-color: red;
+}
+
+.column4 .img6 {
+    height: 220px;
+}
+

@@ -1,0 +1,248 @@
+ header {
+    padding-top: 40px;
+    display: flex;
+    flex-wrap: nowrap;
+    width: 90%;
+    /* height: 60px; */
+    background-color: black;
+    /* position: fixed; */
+    height: 150px;
+    margin-block-start: 40px;
+}
+
+.name {
+    width: 50%;
+    margin-left: 240px;
+}
+
+header a {
+    font-family: brandon-grotesque;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: 0em;
+    text-transform: uppercase;
+    line-height: 2.7em;
+    font-size: 20px;
+}
+
+.menu a {
+    font-family: brandon-grotesque;
+    font-weight: 100;
+    font-style: normal;
+    letter-spacing: 0em;
+    text-transform: none;
+    line-height: 2.7em;
+    font-size: 1.2rem;
+}
+
+.name a:last-of-type {
+    padding: 0;
+}
+
+.name a:first-of-type {
+    padding-right: 5px;
+}
+
+header .menu {
+    float: right;
+    text-align: right;
+}
+
+header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+header li {
+    float: left;
+}
+
+header a {
+    display: inline-block;
+    text-decoration: none;
+    color:#EEAD0E;
+    text-align: center;
+    padding: 14px 16px;
+}
+
+header a:hover {
+    color: antiquewhite;
+}
+
+.fabric {
+    display: inline-block;
+}
+
+.fabric-list {
+    display: none;
+    position: absolute;
+    background-color: black;
+    height: 50px;
+    width: 160px;
+    box-shadow: 0px 8px 16px 0px;
+    z-index: 1;
+}
+
+.fabric-list a {
+    padding: 2px 16px;
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+}
+
+.fabric:hover .fabric-list {
+    display: block;
+}
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: black;
+}
+
+.slideshow {
+    /* background-color: grey; */
+    width: 80%;
+    /* height: 80%; */
+    margin: 50px auto;
+
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;  */
+}
+
+.main-img {
+    width: 100%;
+    height: 80%;
+    /* background-color: green; */
+    margin-bottom: 10px;
+    position: relative;
+}
+
+
+.big-img {
+    /* width: 80%; */
+    height: 800px;
+}
+
+.list-img {
+    /* background-color: rebeccapurple; */
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.list-img div {
+    flex: 1;
+    padding: 5px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: cover;
+}
+
+.control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* .control img {
+    width: 50px;
+} */
+
+#prev {
+    left: 10px;
+    float: left;
+    /* background-color: aqua; */
+}
+
+#next {
+    right: 10px;
+    float: right;
+    /* background-color: blue; */
+    /* width: 50%; */
+}
+
+.active {
+    background-color: red;
+}
+
+
+body .name-info {
+    width: 100%;
+    margin: 50px auto;
+    height: 100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+body .name-info p {
+    font-family: brandon-grotesque;
+    font-weight: 100;
+    font-style: normal;
+    letter-spacing: 0em;
+    text-transform: none;
+    line-height: 1.6em;
+    font-size: 50px;
+    color: #EEAD0E;
+}
+
+body .name-info .photo-name {
+    width: 100%;
+    text-align: center;
+}
+
+body .name-info h2 {
+    font-family: brandon-grotesque;
+    font-weight: 50;
+    font-style: normal;
+    letter-spacing: 0.1em;
+    text-transform: none;
+    line-height: 1em;
+    font-size: 20px;
+    color: #EEAD0E;
+}
+
+footer {
+    background-color: black;
+    width: 100%;
+    height: 150px;
+    font-family: brandon-grotesque;
+    font-weight: 100;
+    font-style: normal;
+    letter-spacing: 0em;
+    text-transform: none;
+    line-height: 1.6em;
+    font-size: 1rem;
+
+    padding-left: 60px;
+    padding-block-start: 200px;
+    padding-bottom: 100px;
+    color: #EEAD0E;
+}
+
+footer p:first-of-type {
+    color: white;
+}
+
+footer img {
+    width: 20px;
+}
+
